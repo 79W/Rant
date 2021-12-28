@@ -1,0 +1,45 @@
+@import './global.scss';
+@import './colors.scss';
+
+@mixin normal {
+  font-size: 14px;
+  line-height: 1.2;
+  text-align: center;
+}
+
+@mixin nav-title {
+  font-size: 16px;
+  text-transform: capitalize;
+  font-weight: 500;
+  color: $dark-text;
+  overflow-x: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  max-width: 60%;
+}
+
+@mixin nav-link {
+  font-size: 14px;
+  font-weight: 100;
+  line-height: 21px;
+  color: $info;
+}
+
+@mixin field-label {
+  font-size: 14px;
+  line-height: 24px;
+  color: $dark-text;
+  font-weight: 300;
+}
+
+@mixin search-action {
+  font-size: 14px;
+  line-height: 34px;
+  font-weight: 300;
+}
+
+@mixin form-label {
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: normal;
+}

@@ -1,0 +1,147 @@
+@import './colors.scss';
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Helvetica,
+    Segoe UI, Arial, Roboto, 'PingFang SC', 'Hiragino Sans GB',
+    'Microsoft Yahei', sans-serif;
+}
+
+.storybook__container {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .image-container {
+    span {
+      text-align: center;
+      display: block;
+      margin: 15px 0;
+    }
+  }
+
+  &.grey {
+    background-color: $grey-text;
+  }
+
+  &.button {
+    button,
+    a {
+      margin-bottom: 20px;
+      margin-right: 20px;
+    }
+    i {
+      margin-right: 5px;
+    }
+  }
+
+  &.column {
+    flex-direction: column;
+  }
+
+  &.icon {
+    i {
+      margin-right: 5px;
+    }
+  }
+
+  nav {
+    margin-bottom: 20px;
+
+    .rant-icon__container {
+      margin: 0;
+    }
+  }
+
+  .rant-image {
+    margin-right: 20px;
+    img {
+      width: 200px;
+      height: 200px;
+    }
+  }
+}
+.slider-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+
+  .slider-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+    p {
+      margin-bottom: 20px;
+    }
+  }
+}
+
+.storybook__icons-container {
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  background-color: $grey-background;
+
+  h1 {
+    font-size: 22px;
+    margin: 15px 0 15px 15px;
+    font-weight: 300;
+  }
+
+  .icon-group {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .icon-block {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 125px;
+    width: 125px;
+    margin: 15px;
+    border-radius: 25px;
+    padding: 12px 8px;
+    background-color: #fff;
+    transition-duration: 0.4s;
+    box-shadow: 2px 2px 5px #eee;
+
+    * {
+      transition-duration: 0.2s;
+    }
+
+    i {
+      font-size: 42px !important;
+      color: $black !important;
+    }
+
+    &:hover {
+      background-color: #fff;
+      box-shadow: 4px 4px 50px #eee;
+      cursor: pointer;
+
+      i {
+        color: $primary !important;
+      }
+
+      .icon-name {
+        color: $primary;
+      }
+    }
+  }
+
+  .storybook__icon-name {
+    color: $black;
+    font-size: 12px;
+    display: block;
+    margin-top: 15px;
+    font-weight: 100;
+  }
+}
